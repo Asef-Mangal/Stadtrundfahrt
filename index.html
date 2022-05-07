@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadtrundfahrt</title>
+    <link rel="stylesheet" href="Stadtrundfahrt.css">
+
+</head>
+<body>
+    <div id="Shopping-cart" class="">
+        <div id="Shopping_cart_header">
+            <div id="close_btn_div">
+                <i id="close_btn" class="fa-solid fa-xmark"></i>
+            </div>
+            <h3 id="wish_items_list_titel">Einkaufswagen</h3>
+            <table id="wish_item_table">
+                <thead id="wish_item_list_thead">
+                    <tr class="">
+                        <th>Artikel</th>
+                        <th>Menge</th>
+                        <th>Einzelpreis</th>
+                        <th>Gesamtpreis</th>
+                    </tr>
+                </thead>
+                <tbody id="wish_item_tableBody">
+                    <!-- wish list tr is rendered hier -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Summe:</td>
+                        <td class="grand_total_amount">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <header id="header">  
+        <h1 class="titel"><a href="">Stadtrundfahrt</a></h1>
+        <div id="header_icons_div">
+            <div id="search_bar_div">
+                <input type="text" name="" id="" placeholder="Suche">
+            </div>
+            <i class="fa-solid fa-user"></i>
+            <div id="shopping-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div id="main_shopping-item-count">0</div>
+                <div id="More-item-count" class="displayNone">+</div>
+            </div>
+        </div>
+    </header>
+        
+    
+            <nav id="navbar">
+                <ul class="Navigation">
+                    <li class="RundBorder"><a class="RundBorder" href="">Startseite</a>
+                        <ul class="Dropdown_1">
+                            <li><a href="">über uns</a></li>
+                            <li><a href="">Partner</a></li>
+                        </ul>
+                    </li>
+                    <li class="RundBorder"><a class="RundBorder" href="">Angebote</a>
+                        <ul class="Dropdown_2">
+                            <li><a href="">Stadtrundfahrten</a>
+                                <ul class="Submenu_1">
+                                    <li><a href="">Große Stadtrundfahrt</a></li>
+                                    <li><a href="">Kleine Stadtrundfahrt</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Touren</a>
+                                <ul class="Submenu_2">
+                                    <li><a href="">Selfie-Tour</a></li>
+                                    <li><a href="">Winterliche Lichtertour</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <li class="RundBorder"><a class="RundBorder" href="">Kontakt</a></li>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div id="carousel">
+                <div id="previewAndnextBtnDiv">
+                    <div class="nextBtn"></div>
+                    <div class="previewBtn"></div>
+                </div>
+                <div id="imgContainer">
+                    <img src="Dresden-Sehenswürdigkeiten.jpg" alt="">
+                    <img src="Aussicht.jpg" alt="">
+                    <img src="Bus_1.jpg" alt="">
+                    <img src="Bus_3.jpg" alt="">
+                    <img src="Bus.jpg" alt="">
+                    <img src="Karte.jpg" alt="">
+                    <img src="Nacht.jpg" alt=""> 
+                </div>
+            </div>
+            <div id="dotsContainer">
+                <div id="dotsDiv">
+                    <div id="0" class="dot"></div>
+                    <div id="-1" class="dot"></div>
+                    <div id="-2" class="dot"></div>
+                    <div id="-3" class="dot"></div>
+                    <div id="-4" class="dot"></div>
+                    <div id="-5" class="dot"></div>
+                    <div id="-6" class="dot"></div>
+                </div>
+            </div>
+
+        <div id="sideNavIcon">
+            <div id="a" class="line"></div>
+            <div id="b" class="line"></div>
+            <div id="c" class="line"></div>
+        </div>
+        <div id="sideNavContainer">
+            <ul id="sideNavBar">
+                <li class=""><a class="MainMenu" href="#">Startseite</a>
+                    <ul class="MenuToBeHidenAtFirst">
+                        <li><a class="SubMenu" href="#">> über uns</a>
+                            <ul>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </li>
+                        <li><a class="SubMenu" href="#">> Partner</a>
+                            <ul>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class=""><a class="MainMenu" href="#">Angebote</a>
+                    <ul class="MenuToBeHidenAtFirst">
+                        <li><a class="SubMenu" href="#">> Stadtrundfahrten</a>
+                            <ul class="MenuToBeHidenAtFirst">
+                                <li><a class="deepMenu" href="#">- Große Stadtrundfahrt</a></li>
+                                <li><a class="deepMenu" href="#">- Kleine Stadtrundfahrt</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="SubMenu" href="#">> Touren</a>
+                            <ul class="MenuToBeHidenAtFirst">
+                                <li><a class="deepMenu" href="#">Selfie-Tour</a></li>
+                                <li><a class="deepMenu" href="#">Winterliche Lichtertour</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class=""><a class="MainMenu" href="#">Kontakt</a>
+                   <ul>
+                        <li><a href=""></a></li>
+                    </ul> 
+                </li>
+                
+            </ul>
+        </div>
+        <section id="home" class="displayNone">
+            <h2 id="homeTitel">Über uns</h2>
+            <div id="Bus_1">
+                <img src="Bus_1.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quos culpa impedit sed sequi, officia vel architecto eaque iste tempore magni debitis mollitia quisquam voluptatem? Minima odit praesentium culpa maiores.
+                    Accusamus, asperiores corporis autem id deserunt nemo ex soluta. Repellat, hic consequatur. Inventore eos, autem ullam recusandae commodi voluptates possimus architecto odio maxime fugiat cumque dolorum harum dicta placeat fugit.
+                    Ea ducimus, quas porro vero dolore animi repellat maxime, architecto iste molestias nobis minus quis. Odit est atque, laudantium officiis delectus, expedita explicabo et sit nesciunt rerum magnam, cupiditate repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quasi totam eaque, ullam placeat deleniti aliquam perferendis eos dolores dolorem sint dignissimos. Magni reprehenderit nihil voluptatibus consequuntur perspiciatis, quaerat doloribus.
+                    Vel sunt maxime, quisquam voluptate dolor aspernatur ut repellat quidem aperiam id minima aut autem illum explicabo impedit praesentium placeat animi repudiandae deserunt? Magni aliquam obcaecati inventore quaerat vero earum.
+                    Amet iure aliquid mollitia quas earum ad praesentium laudantium labore, error repellat dolore sapiente in accusamus, provident quasi, voluptate fugit dolor! Animi laborum amet quasi alias nobis rem ad illum!
+                </p>
+            </div>
+            <div id="Bus_3">
+                <img src="Bus_3.jpg" alt="">
+                <p>
+                    Soluta facere sequi voluptatem optio numquam nam esse consequatur animi ipsa quidem, rem ducimus eum corrupti maiores sit distinctio et, tempore, commodi dolore placeat? Cupiditate quis asperiores assumenda cumque ad.
+                    Et voluptatem perferendis doloribus consequatur aut, quasi quia cum, libero, omnis qui animi iusto corrupti aspernatur. Quibusdam sed inventore, similique assumenda, perspiciatis veniam ratione ducimus doloribus reprehenderit doloremque vel culpa.
+                    Expedita temporibus dolor incidunt delectus, atque totam quae sunt corporis minus, nobis dolorem modi omnis cum voluptate molestiae sed magnam labore id veritatis fugiat rerum a quis. Placeat, illo nesciunt!
+                    Alias quas distinctio harum. Quaerat odio ipsam exercitationem voluptatibus tempore incidunt earum obcaecati debitis sit voluptatem alias a architecto illo, facere soluta? Error molestias iure suscipit ea sapiente veritatis excepturi!
+                    Natus nostrum dolorem nesciunt itaque, quae culpa aperiam corrupti veniam distinctio deserunt optio, corporis assumenda accusamus dolore ut ipsa, quas praesentium. Necessitatibus earum nihil aliquid et repellat illum ab rem.
+                    Culpa quibusdam laborum repellendus dolorum quis saepe unde repudiandae provident inventore ipsa vel commodi dicta cumque voluptates, ab quasi molestiae impedit ratione quae fuga, natus laboriosam rerum explicabo cum. Illum.
+                    Explicabo sapiente illum unde. Molestiae nobis nostrum illo laboriosam impedit iure, reiciendis quia voluptates animi soluta perferendis ut dolore, repudiandae expedita sapiente. Voluptates quia ab voluptatem tempore sunt similique animi!
+                </p>
+            </div>
+            
+        </section>
+        
+        <section id="offers">
+            <div id="offerFilter">
+                <h4 id="chosed_filter">ASDFasdf</h4>
+                <div id="offerFilterBtnDiv">
+                    <div id="Familienangebot" class="offerFilterBtn">Familienangebot</div>
+                    <div id="Firmenangebot" class="offerFilterBtn">Firmenangebot</div>
+                    <div id="Sonderangebot" class="offerFilterBtn">Sonderangebot</div>
+                    <div id="alle" class="offerFilterBtn">alle</div>
+                </div>
+            </div>
+            <div id="cartDiv">
+                <!-- carts are rendered hier -->
+            </div>
+            
+        </section>
+        <section id="contactSection">
+            
+            <h2 class="Contact_Titel">Kontakt</h2>
+
+            <h3 id="ConfirmationOfFormSubmission">Vielen Dank! wir haben Ihre Anfrage erhalten.</h3>
+
+            <div id="backgroundImg">
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-phone"></i>
+            </div>
+            <form name="Form" id="contactForm">
+                    <div id="Contact_form_wrapper">
+                        <div id="loginOrRejestrationHint">
+                            <p id="regestrationOrLoginMessage">Bitte &nbsp;<button id="logInBtn">einlogen</button>, um nur das Nachrichtsfeld auszufüllen.</br><br> Falls Sie sich noch nicht registriert haben, dann <button id="RegistrationBtn">registrieren</button>&nbsp;Sie sich jetzt.</p>
+                        </div>
+                        <label>Vorname:</label><br>
+                        <input class="input" type="text" placeholder="Vorname"><br>        
+                        <label>Familienname:</label><br>
+                        <input class="input" type="text" placeholder="Familienname"><br> 
+                        
+                        
+                        <label>Geschlecht:</label><br>
+                        <div id="radioBtn">
+                            <input class="gender" type="radio" name="gender" id="male"><label for="male">männlich</label><br><input class="gender" type="radio" name="gender" id="female"><label for="female">weiblich</label><br><input class="gender" type="radio" name="gender" id="divers"><label for="divers">divers</label>
+                        </div><br>
+                        
+                        <label>Emailadresse:</label><br>
+                        <input class="input" type="email" name="" id="" placeholder="abc@abc.com"><br> 
+                        
+                        <label>Nachricht:</label><br>
+                        <textarea class="input" id="MessageArea" name="" id="" cols="30" rows="10"></textarea>
+                        <p id="digitsCounter"></p>
+                        <p id="error"><i class="fas fa-exclamation-triangle"></i> Füllen Sie bitte die rot markierten Felder aus!</p><br>
+                        <button id="submitBtn" type="submit"  class="formElements" ><i class="fas fa-paper-plane"></i>absenden</button>
+                        <i id="paper-plane" class="fas fa-paper-plane"></i>        
+                    </div>
+                </form>
+        </section>
+        <footer id="footer">
+            <div id="footer-Content">
+                <div id="Adress">
+                    <h3>Adresse:</h3>
+                    <p>Beispiel Straße 123,</p>
+                    <p>01234 Dresden</p>
+                </div>
+                <div id="Contact">
+                    <h3>Kontakt:</h3>
+                    <p>Tel.: 01512345678</p>
+                    <p>E-Mailadresse: asefmangal@yahoo.com</p>
+                </div>
+                <div id="Opening-Time">
+                    <h3>Öffnungszeiten:</h3>
+                    <p>Mo. - Fr.: 9:00 - 18:00 Uhr</p>
+                </div>
+                <div id="Social-Icons">
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        
+        </footer>
+    </div>
+<script src="https://kit.fontawesome.com/21e3649b1b.js" crossorigin="anonymous"></script>
+<script src="Stadtrundfahrt.js" type="module"></script>    
+<script src="shopping_item.js"></script>
+
+
+</body>
+</html>

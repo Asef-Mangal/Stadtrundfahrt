@@ -258,11 +258,11 @@ function render_cart() {
             cart.append(cart_image, cart_name, cart_discription, cart_price_div,cart_shopping_icon_div);
             cartDiv.append(cart);
 
-            update_offer_filter_btn();
+            update_offer_filter_btn(cart, cart_name);
     })
 }
 
-function update_offer_filter_btn() {
+function update_offer_filter_btn(Cart, CartName) {
     offerFilterBtn.forEach((eachOfferFilterBtn) => {
         eachOfferFilterBtn.addEventListener("click", () => {
             //console.log(filter_btn_for_small_device.getAttribute("id"));
@@ -279,18 +279,17 @@ function update_offer_filter_btn() {
                     eachBtn.classList.remove("selectedFilterBtn");
                 }
             })
-            let cart_name = cart.children[1].innerHTML;
-            if (eachOfferFilterBtn.id != cart_name.match(eachOfferFilterBtn.id)) {
-                cart.classList.add("displayNone");
-                cart.classList.remove("displayBlock");
+            if (eachOfferFilterBtn.id != CartName.innerHTML.match(eachOfferFilterBtn.id)) {
+                Cart.classList.add("displayNone");
+                Cart.classList.remove("displayBlock");
             }
-            if (eachOfferFilterBtn.id == cart_name.match(eachOfferFilterBtn.id)) {
-                cart.classList.add("displayBlock");
-                cart.classList.remove("displayNone");
+            if (eachOfferFilterBtn.id == CartName.innerHTML.match(eachOfferFilterBtn.id)) {
+                Cart.classList.add("displayBlock");
+                Cart.classList.remove("displayNone");
             }
             if (eachOfferFilterBtn.id == "alle") {
-                cart.classList.add("displayBlock");
-                cart.classList.remove("displayNone");
+                Cart.classList.add("displayBlock");
+                Cart.classList.remove("displayNone");
             }
             
             

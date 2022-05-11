@@ -170,16 +170,50 @@ window.addEventListener('resize', function(){
     }
 });
 
+let shoppingItems_array = [];
+
+
+
+function push_all_products_to_shopping_items_array() {
+    shopping_items.forEach((each_shopping_item) => {
+        shoppingItems_array.push(each_shopping_item);
+        console.log(shoppingItems_array)
+    })
+}
+push_all_products_to_shopping_items_array();
+
+const search_bar = document.querySelector("#search_bar");
+search_bar.addEventListener("input", push_search_products_to_shopping_items_array)
+
+function push_search_products_to_shopping_items_array(e) {
+    shoppingItems_array = [];
+    cartDiv.innerHTML = "";
+    
+    let search_input_value = e.target.value
+    shopping_items.forEach((ShoppingItem) => {
+        if (ShoppingItem.name.includes(search_input_value)) {
+            console.log("yes")
+            shoppingItems_array.push(ShoppingItem);
+            console.log(shoppingItems_array)
+        }
+        console.log(ShoppingItem.name)
+
+    })
+    console.log(cartDiv.children[2]);
+    console.log(search_input_value)
+
+    render_cart();
+}
 let cartDiv = document.querySelector("#cartDiv");
 
 function render_cart() {
     console.log("render_cart is rendert");
 
-    shopping_items.forEach((each_shopping_item) => {
+    shoppingItems_array.forEach((each_shopping_item) => {
         // creating main cart div
         const cart = document.createElement('div');
             cart.id = "cart";
-
+            
         const cart_image = document.createElement('img');
             cart_image.src = each_shopping_item.imgSrc;
 
